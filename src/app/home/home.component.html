@@ -1,0 +1,13 @@
+<section>
+    <form>
+      <input type="text" placeholder="Filter by city" #filter />
+      <button class="primary" type="button" (click)="filterResults(filter.value)">Search</button>
+    </form>
+  </section>
+  <section class="results">
+    <!-- <app-housing-location [housingLocation]="housingLocation"></app-housing-location>  // [] around the housingLocation indicate property binding. This means you're binding the value of the parent component's housingLocation property(i.e value in HomeComponent class) to the housingLocation input property in the child component(housing-location @Input() usage)-->
+    <app-housing-location
+    *ngFor="let housingLocation of filteredLocationList"
+    [housingLocation]="housingLocation">
+    </app-housing-location>
+</section>

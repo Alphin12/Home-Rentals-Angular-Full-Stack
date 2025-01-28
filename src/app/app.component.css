@@ -1,0 +1,34 @@
+:host {
+  --content-padding: 10px;
+}
+header {
+  display: block;
+  height: 70px;
+  padding: var(--content-padding);
+  box-shadow: 0px 5px 25px var(--shadow-color);
+  
+}
+.content {
+  padding: var(--content-padding);
+}
+
+h2{
+  margin: 0;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.brand-name{
+  display: flex;     /* Enables flexbox layout */
+  align-items: center;  /* Vertically align items to the center */
+  justify-content: flex-start; /* Align items to the left (default) */
+  margin-bottom: 20px;
+}
+
+.brand-logo {
+  margin-right: 20px;      /* Add space between the logo and the heading */
+}
+
+a{
+  text-decoration: none;   /* to remove the underlining (default behavior) */
+}
